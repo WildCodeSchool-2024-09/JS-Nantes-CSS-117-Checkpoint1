@@ -41,10 +41,14 @@ p {
   margin-bottom: var(--gutter);
 }
 
+
 .desktop {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+
 }
 
 .description {
