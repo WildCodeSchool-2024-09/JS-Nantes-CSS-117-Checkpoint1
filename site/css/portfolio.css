@@ -65,17 +65,21 @@ header nav {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  position: absolute;
 }
 
 .skills_desc {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  width: 90%;
 }
 
 .column {
@@ -87,7 +91,7 @@ header nav {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
-  width: 40%;
+  width: 50%;
 }
 
 .column:first-of-type {
@@ -129,5 +133,14 @@ header nav {
 @media screen and (max-width: 699px) {
   .desktop img {
     display: none;
+  }
+
+  .skills_desc {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
   }
 }
