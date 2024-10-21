@@ -7,7 +7,6 @@
 
   --styledBorder: var(--borderTemplate) var(--borderColor);
   --styledShadow: 0 5px 5px 0 var(var(--shadowColor));
-
   --textAlign: center;
 }
 
