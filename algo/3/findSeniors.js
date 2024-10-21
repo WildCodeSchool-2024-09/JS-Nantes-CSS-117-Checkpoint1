@@ -26,7 +26,11 @@ const persons = [
 */
 
 function findSeniors(persons) {
-  // Your code here !
+	for (let i = 0; i < findSeniors.length; i++) {
+		if (findSeniors.job.includes("web dev") && findSeniors.experience >= 5) {
+			return true;
+		}
+	}
 }
 
 module.exports = findSeniors;
