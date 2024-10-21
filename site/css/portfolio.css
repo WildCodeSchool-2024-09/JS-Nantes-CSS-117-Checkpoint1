@@ -67,7 +67,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -107,4 +107,90 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+/* premier banner */
+
+.firstBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* third banner */
+
+.projects h2,
+p {
+  text-align: center;
+}
+
+/* oppacité des lien non valide */
+
+.disabled {
+  opacity: 0.3;
+}
+
+/*input*/
+
+.input1 {
+  text-align: center;
+  background: none;
+  border-radius: 5%;
+  height: 2rem;
+  border: 1px solid white;
+  margin: 0.5%;
+  color: white;
+  cursor: pointer;
+}
+
+/* reglage en fonction de la taille de l'écran */
+
+@media (min-width: 700px) {
+  .menu {
+    position: absolute;
+    right: 0;
+  }
+  .desktop {
+    display: flex;
+    justify-content: center;
+  }
+  .myColumn {
+    display: flex;
+    min-width: 70rem;
+    flex-direction: row-reverse;
+  }
+
+  /* articles */
+
+  .skills {
+    display: flex;
+    justify-content: center;
+  }
+  .skills h2 {
+    position: absolute;
+  }
+  .column {
+    margin-top: 0.5rem;
+    width: 85%;
+  }
+
+  /* projets */
+
+  .myBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 700px) {
+  .desktop img {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .myColumn {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
