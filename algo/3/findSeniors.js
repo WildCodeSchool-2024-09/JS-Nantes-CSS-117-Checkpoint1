@@ -5,28 +5,41 @@ lui-même contenant deux sous-tableaux :
 - Le second ne contient que des data analysts seniors
 (Étant donné qu'une personne est senior si elle a 5 ans d'expérience ou plus)
 
+*/
 const persons = [
-  { name: 'Mary', experience: 2, job: 'web dev' },
-  { name: 'Tony', experience: 6, job: 'data analyst' },
-  { name: 'John', experience: 2, job: 'data analyst' },
-  { name: 'Jane', experience: 6, job: 'web dev' },
-  { name: 'Maggie', experience: 2, job: 'web dev' },
-  { name: 'Leonardo', experience: 2, job: 'data analyst' },
-  { name: 'Carla', experience: 4, job: 'data analyst' },
-  { name: 'Mickael', experience: 7, job: 'web dev' },
-  { name: 'Penelope', experience: 7, job: 'web dev' },
-  { name: 'Homer', experience: 5, job: 'data analyst' },
-  { name: 'Leonardo', experience: 2, job: 'data analyst' },
-  { name: 'Carla', experience: 4, job: 'web dev' },
-  { name: 'Lisa', experience: 3, job: 'web dev' },
-  { name: 'Millie', experience: 5, job: 'data analyst' },
-  { name: 'Penelope', experience: 7, job: 'web dev' },
+  { name: "Mary", experience: 2, job: "web dev" },
+  { name: "Tony", experience: 6, job: "data analyst" },
+  { name: "John", experience: 2, job: "data analyst" },
+  { name: "Jane", experience: 6, job: "web dev" }, oooo
+  { name: "Maggie", experience: 2, job: "web dev" },
+  { name: "Leonardo", experience: 2, job: "data analyst" },
+  { name: "Carla", experience: 4, job: "data analyst" },
+  { name: "Mickael", experience: 7, job: "web dev" },oooo
+  { name: "Penelope", experience: 7, job: "web dev" },oooo
+  { name: "Homer", experience: 5, job: "data analyst" },
+  { name: "Leonardo", experience: 2, job: "data analyst" },
+  { name: "Carla", experience: 4, job: "web dev" },
+  { name: "Lisa", experience: 3, job: "web dev" },
+  { name: "Millie", experience: 5, job: "data analyst" },
+  { name: "Penelope", experience: 7, job: "web dev" },oooo
 ];
 
-*/
+let devWebSenior = [];
+let dataAnalystSenior = [];
+
+let newTab = [devWebSenior, dataAnalystSenior];
 
 function findSeniors(persons) {
-  // Your code here !
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].experience >= 5 && persons[i].job === "web dev") {
+      devWebSenior.push(persons[i]);
+    }
+    if (persons[i].experience >= 5 && persons[i].job === "data analyst") {
+      dataAnalystSenior.push(persons[i]);
+    }
+  }
+  console.log(newTab);
+  return newTab;
 }
 
 module.exports = findSeniors;
