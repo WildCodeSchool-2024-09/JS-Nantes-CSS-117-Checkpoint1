@@ -25,6 +25,7 @@ p {
 
 .menu {
   display: flex;
+  margin-left: auto;
   margin-bottom: var(--gutter);
 }
 
@@ -55,6 +56,10 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  width: 1800px;
+  margin-top: 250px;
 }
 
 .skills--title {
@@ -67,7 +72,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -103,8 +108,19 @@ p {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+  opacity: 0.33;
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
 }
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (width <= 700px) {
+  .skills {
+    flex-direction: flexbox;
+    width: 100%;
+  }
 }
