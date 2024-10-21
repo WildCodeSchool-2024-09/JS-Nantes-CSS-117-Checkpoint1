@@ -20,7 +20,6 @@
 
 @media (min-width: 700px){
 .navbar{
-  display: flex;
   justify-content: space-between;
 }
 
@@ -37,11 +36,13 @@
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
+
+  & .column{
+    flex-basis: 50%;
+  }
  }
 
- .column{
-  width: 40vw;
- }
+
 }
 
 

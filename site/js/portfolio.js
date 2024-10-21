@@ -22,12 +22,14 @@ const yourName = document.querySelector(".firstname");
 const pinkColor = document.querySelectorAll(".pink-bg");
 const pinkTxt = document.querySelectorAll(".pink-text");
 
+let oldName = "Matt";
 
 nameButton.addEventListener("click", () => {
+ 
   const newName = prompt("What's your name ?");
   const recolor = prompt("choose a color");
+  yourName.innerHTML = yourName.innerHTML.replace(oldName, newName); 
 
-  yourName.innerHTML = yourName.innerHTML.replace("Matt", newName); 
 
  pinkColor.forEach(function(element) {
   element.style.backgroundColor = recolor;  
@@ -39,9 +41,10 @@ nameButton.addEventListener("click", () => {
  pinkTxt.forEach(function(element) {
   element.style.color = recolor;  
 });
- //pinkTxt.style.color = recolor;
+
+oldName = newName;
 
 })
 
-// const pinkTxt = document.querySelectorAll(".pink-text");
+
 
