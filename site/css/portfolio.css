@@ -72,6 +72,12 @@ header nav {
   text-align: var(--textAlign);
 }
 
+.skills_desc {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
 .column {
   border-left: var(--styledBorder);
   border-right: var(--styledBorder);
@@ -81,6 +87,7 @@ header nav {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 40%;
 }
 
 .column:first-of-type {
