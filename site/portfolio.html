@@ -30,18 +30,20 @@
       <section id="top-banner">
         <h1 >Full-Stack developer</h1>
         <p>I code beautifully simple things, and I love what I do.</p>
-        <img id="avatar" src="/site/image/avatar.svg">
+        <img id="avatar" src="/site/image/avatar-bis.png">
         <figure class="desktop" id="desktop-img">
           <img src="image/desktop.svg" alt="desktop" />
         </figure>
       </section>
 
       <!-- Second banner with description of your name and your presentation -->
-      <article>
-        <section class="description pink-bg">
+      <article class="second-banner">
+        <section class="description pink-bg" id="background-banner">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+          <button id="change-user">Modify text and colour</button>
         </section>
+        
       </article>
 
       <!-- Bloc of list of skill front end and back end -->
@@ -58,6 +60,8 @@
               <ul>
                 <li>VScode</li>
               </ul>
+              <input type="text" placeholder="Add your dev tools">
+              <button class="nice-buttons">Add</button>
           </section>
           <section class="column">
               <img src="image/frontend.svg" alt="" />
@@ -71,6 +75,7 @@
                 <li>You can modify</li>
                 <li>You can modify</li>
               </ul>
+              <button class="nice-buttons">Modify</button>
             </section>
       </article>
 
@@ -103,7 +108,7 @@
           
       </article>      
     </main>
-    <footer class="description pink-bg">
+    <footer class="description pink-bg" id="bottom-background">
         <img src="image/logo-white.svg" alt='logo-white' />
         <p>Living, learning, & leveling up one day at a time.</p>
     </footer>

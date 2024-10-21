@@ -144,7 +144,33 @@ p {
     display: block;
   }
 
+  .second-banner{
+    height: 400px;;
+  }
 
+  .description, .pink-bg{
+    height: 400px;
+  }
+
+  #change-user{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(235, 156, 168);
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    color: white;
+  }
+
+  .nice-buttons{
+    height:30px;
+    width: auto;
+    background-color: pink;
+    border: none;
+    border-radius: 4px;
+    color: white;
+  }
 
   .skills {
     display: flex;
