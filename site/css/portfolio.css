@@ -28,7 +28,9 @@ p {
   margin-left: auto;
   margin-bottom: var(--gutter);
 }
-
+.container {
+  margin-right: 500%;
+}
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -109,7 +111,7 @@ p {
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
   opacity: 0.33;
-  display: flex;
+  display: inline-block;
   align-self: flex-end;
   justify-content: space-between;
 }
@@ -121,6 +123,10 @@ p {
 @media screen and (width <= 700px) {
   .skills {
     flex-direction: flexbox;
+    width: 100%;
+  }
+  .box {
+    display: flex;
     width: 100%;
   }
 }
