@@ -121,7 +121,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .projects a {
@@ -151,7 +150,13 @@ section {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
-  /* align-self: center; */
+}
+
+.skillsModifyButton {
+  padding: 10px;
+  background: var(--purple);
+  color: var(--lightWildColor);
+  border: none;
 }
 
 .purple-text {
@@ -161,5 +166,14 @@ section {
 @media screen and (max-width: 700px) {
   .skills {
     flex-direction: column-reverse;
+  }
+
+  .boxesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
   }
 }
