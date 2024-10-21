@@ -118,3 +118,9 @@ header nav {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (max-width: 699px) {
+  .desktop img {
+    display: none;
+  }
+}
