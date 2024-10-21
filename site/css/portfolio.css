@@ -33,12 +33,6 @@ nav {
   margin-bottom: var(--gutter);
 }
 
-main {
-max-width: 1024px;
-margin: auto;
-}
-
-
 section {
   display: flex;
   flex-direction: column;
@@ -61,6 +55,14 @@ section {
   padding: calc(var(--gutter) * 3.75);
 }
 
+.changeNameButton {
+  padding: 10px;
+  border-radius: (var(--radius));;
+  border: var(--styledBorder);
+  background-color: var(--lightWildColor);
+  color: var(--light);
+}
+
 .description p {
   width: 60%;
   text-align: var(--textAlign);
@@ -77,7 +79,6 @@ section {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  
 }
 
 .skills--title {
@@ -94,6 +95,7 @@ section {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 100%;
 }
 
 .column:first-of-type {
@@ -115,8 +117,31 @@ section {
   color: var(--lightWildColor);
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .projects a {
   color: var(--purple);
+  font-size: 10px;
+  
+}
+
+.projects p {
+  font-size: 10px;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.boxesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .box {
@@ -126,6 +151,7 @@ section {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+  /* align-self: center; */
 }
 
 .purple-text {
