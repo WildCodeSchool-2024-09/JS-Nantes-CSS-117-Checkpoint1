@@ -6,9 +6,16 @@ Rappel : Une année bissextile vérifie **une** de ces règles :
 Ex : 2004, 2016 et 2020 sont des années bissextiles
 Rappel : Pour vérifier si un nombre est divisible par un autre, tu peux utiliser l'opérateur "modulo" (%)
 */
-
+const year = [2004, 2016, 2020]
 function isLeapYear(year) {
-  // Your code here !
-}
 
-module.exports = isLeapYear;
+
+  for (i = 0; i < year.length; i++);
+  if ((year & 4) == 0) && ((year % 100 != 0)) || (year % 400 == 0){
+    return true
+  }
+
+
+
+
+  module.exports = isLeapYear;
