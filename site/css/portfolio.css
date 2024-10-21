@@ -61,6 +61,16 @@ header nav {
   background-color: var(--lightWildColor);
 }
 
+
+.button_modifyer {
+  background-color: rgba(245, 245, 245, 0.349);
+  border: whitesmoke solid 3px;
+  border-radius: 5px;
+  padding: 0.75rem;
+  color: whitesmoke;
+  margin: 1rem;
+}
+
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
