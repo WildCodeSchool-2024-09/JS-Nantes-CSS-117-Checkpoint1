@@ -11,7 +11,7 @@
   --textAlign: center;
 }
 
-/* ================ NAVBARRE +++++++++++++++++++++++ */
+/* ========================  NAVBARRE ======================= */
 
 img {
   max-width: 100%;
@@ -39,19 +39,43 @@ nav {
   align-items: center;
 }
 
+/* =========================== EN TETE ============================= */
+
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.entete {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: calc(var(--gutter) * 3);
+}
+
 .avatarbody {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--gutter) * 2);
 }
 
-.blockavatarbody {
-  display: flexbox;
+.fin-entete {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+.blockavatarbody {
+  margin: 0;
 }
 
 .description {
@@ -71,6 +95,8 @@ nav {
   background-color: var(--lightWildColor);
 }
 
+/*  =========== SKILLS ============= */
+
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
@@ -81,6 +107,19 @@ nav {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
+
+@media (min-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+
+.column {
+  width: 100%;
+}
+/* ============= origin ============= */
 
 .column {
   border-left: var(--styledBorder);
