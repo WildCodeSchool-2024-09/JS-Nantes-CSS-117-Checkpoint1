@@ -23,6 +23,10 @@ p {
   padding: 0 var(--gutter);
 }
 
+header nav {
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
