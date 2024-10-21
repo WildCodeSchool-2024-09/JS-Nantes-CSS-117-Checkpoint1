@@ -18,7 +18,9 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
-  // Your code here !
+for(let i = 0, i <= 26, i++){
+  console.log("nothing");
 }
+};
 
 module.exports = theaterSieges;

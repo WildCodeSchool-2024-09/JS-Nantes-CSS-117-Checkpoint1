@@ -20,13 +20,23 @@ const persons = [
   { name: 'Carla', experience: 4, job: 'web dev' },
   { name: 'Lisa', experience: 3, job: 'web dev' },
   { name: 'Millie', experience: 5, job: 'data analyst' },
-  { name: 'Penelope', experience: 7, job: 'web dev' },
+  { name: 'Penelope', experience: 7, job:  },
 ];
+
+persons.experience filter()
+const onlyCats = animals.filter((animal) => animal.species === "Cat");
 
 */
 
+
+
 function findSeniors(persons) {
-  // Your code here !
+const senior = persons.filter((xp) => xp.experience >= 5);
+const data = senior.filter((data) => data.job === 'data analyst');
+const webDev = senior.filter((web) => web.job === 'web dev' );
+return [webDev,data];
 }
+
+
 
 module.exports = findSeniors;
