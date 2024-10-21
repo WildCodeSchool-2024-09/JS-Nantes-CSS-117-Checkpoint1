@@ -27,6 +27,12 @@ header nav {
   justify-content: space-between;
 }
 
+#banner {
+  display: block;
+  text-align: center;
+}
+
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
