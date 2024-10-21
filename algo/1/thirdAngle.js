@@ -7,7 +7,11 @@ thirdAngle(20, 80) doit retourner 80
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+  let result = a + b;
+  let c = 180 - result;
+  return c;
 }
+
+// thirdAngle(90, 30);
 
 module.exports = thirdAngle;

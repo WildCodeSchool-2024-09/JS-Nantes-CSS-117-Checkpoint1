@@ -15,8 +15,42 @@ img {
   max-width: 100%;
 }
 
+.white-text {
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
 h1 {
   font-size: calc(var(--gutter) * 1.5);
+}
+
+.Title {
+  text-align: center;
+  font-size: 55px;
+  font-style: italic;
+  margin: 20px 0 0 0;
+}
+
+#presentation {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#Information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.classBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 p {
@@ -32,6 +66,16 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+#buttonModify {
+  color: white;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(247, 213, 218);
+  border-radius: 5px;
+  border-color: white;
+  font-size: medium;
 }
 
 .description {
@@ -55,6 +99,9 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .skills--title {
@@ -67,10 +114,11 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 45%;
 }
 
 .column:first-of-type {
@@ -107,4 +155,19 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (max-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 90%;
+  }
+  .desktop img {
+    max-width: 0;
+  }
 }
