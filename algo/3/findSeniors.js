@@ -26,6 +26,15 @@ const persons = [
 */
 
 function findSeniors(persons) {
+  for (let i = 0; i <= persons.lenght; i++) {
+    const arrays = [persons[i].experience];
+    if (arrays >= 5) {
+      const senior = [arrays];
+      persons.push(senior);
+    }
+  }
+  console.log(findSeniors());
+
   // Your code here !
 }
 
