@@ -24,11 +24,8 @@ input1.addEventListener("click", function () {
   );
   firstname.style.color = hisName2;
   let bg2 = prompt(
-    "Enter The background color you want like purple, red, white, ..."
+    "Enter The background color for the home page you want like purple, red, white, ..."
   );
-  backgroundBG.style.backgroundColor = bg2;
 
-  // if (bg2) {
-  //   document.documentElement.style.setProperty("--purple", bg2);
-  // }
+  document.documentElement.style.setProperty("--lightWildColor", bg2);
 });
