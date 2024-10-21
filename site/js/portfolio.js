@@ -1,22 +1,28 @@
+// step 1
 const newPicture = document.getElementById('avatar');
-
 newPicture.addEventListener('click', () => {
   newPicture.src = "image/avatar.svg"
 });
 
-const buttonChangeProfil = document.getElementById('change-user');
-const nameField = document.getElementById('firstname');
-const backgroundBanner=document.getElementById('background-banner');
-const textAreas = document.getElementsByTagName("h4");
-const niceButtons = document.querySelectorAll('.nice-buttons');
-const backgroundBottom=document.getElementById('bottom-background')
-const links = document.querySelectorAll(".link")
+// To add fields into the skill list - bonus step 8
+const incrementList = document.getElementById("increment-list");
+const addButton = document.getElementById("add-button");
+const newText = document.getElementById('new-text');
+
+addButton.addEventListener("click", () => {
+  console.log(newText.value);
+  const newEntry = document.createElement("li");
+  newEntry.innerHTML = newText.value;
+  incrementList.appendChild(newEntry);
+  newText.value="";
+});
+
+// Change the skill list in dev front - Bonus step 7
 const listToModify = document.getElementById("front-dev-tools")
 const buttonModify = document.getElementById("selection-button");
 const list1 = document.getElementById("li-1");
 const list2 = document.getElementById("li-2");
 const list3 = document.getElementById("li-3");
-
 
 buttonModify.addEventListener("click", () => {
   list1.textContent="";
@@ -27,6 +33,15 @@ buttonModify.addEventListener("click", () => {
   list3.textContent="Terminal"
 })
 
+// Change color, background color and content of User Name by clicking on a button
+// Allow entries for the user choice - step 2 to 5
+const buttonChangeProfil = document.getElementById('change-user');
+const nameField = document.getElementById('firstname');
+const backgroundBanner=document.getElementById('background-banner');
+const textAreas = document.getElementsByTagName("h4");
+const niceButtons = document.querySelectorAll('.nice-buttons');
+const backgroundBottom=document.getElementById('bottom-background')
+const links = document.querySelectorAll(".link")
 
 buttonChangeProfil.addEventListener('click', () => {
   const backgroundColor=prompt('Veuillez choisir la couleur du fond')
