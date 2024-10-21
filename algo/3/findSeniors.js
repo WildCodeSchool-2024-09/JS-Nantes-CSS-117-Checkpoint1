@@ -26,7 +26,14 @@ const persons = [
 */
 
 function findSeniors(persons) {
-  // Your code here !
+  const devSenior = persons.filter((person) => {
+    return person.job === "web dev" && person.experience > 4;
+  });
+  const dataSenior = persons.filter((person) => {
+    return person.job === "data analyst" && person.experience > 4;
+  });
+  const myArray = [devSenior, dataSenior];
+  return myArray;
 }
 
 module.exports = findSeniors;
