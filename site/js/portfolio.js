@@ -1,12 +1,17 @@
 // changement avatar
 
-const avatarSwitch = document.querySelector(".avatar");
+let avatarSwitch = document.querySelector(".avatar");
+const avatarBase = "avatar-bis.png";
+const newAvatar = "avatar.svg";
+
+
+
 
 avatarSwitch.addEventListener("click", () => {
-  if (avatarSwitch.src = "/site/image/avatar-bis.png"){
-avatarSwitch.src = "/site/image/avatar.svg"
+  if (avatarSwitch.src.endsWith(avatarBase)){
+avatarSwitch.src = "/site/image/"+ newAvatar;
 } else {
-  avatarSwitch.src = "/site/image/avatar-bis.png"
+  avatarSwitch.src = "/site/image/" + avatarBase;
 }
 } ) ;
 
@@ -14,16 +19,20 @@ avatarSwitch.src = "/site/image/avatar.svg"
 
 const nameButton = document.querySelector(".button-name");
 const yourName = document.querySelector(".firstname");
-const pinkColor = document.querySelector(".pink-bg");
+const pinkColor = document.querySelectorAll(".pink-bg");
 const pinkTxt = document.querySelectorAll(".pink-text");
 
 
 nameButton.addEventListener("click", () => {
   const newName = prompt("What's your name ?");
   const recolor = prompt("choose a color");
+
   yourName.innerHTML = yourName.innerHTML.replace("Matt", newName); 
 
- pinkColor.style.backgroundColor = recolor;
+ pinkColor.forEach(function(element) {
+  element.style.backgroundColor = recolor;  
+});
+ 
 
 
 
