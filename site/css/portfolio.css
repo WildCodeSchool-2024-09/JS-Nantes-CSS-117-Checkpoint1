@@ -10,6 +10,7 @@
 
   --textAlign: center;
 }
+/*body{background-color: red;}*/
 
 img {
   max-width: 100%;
@@ -32,6 +33,7 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  visibility: hidden;
 }
 
 .description {
@@ -55,6 +57,8 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .skills--title {
@@ -71,16 +75,21 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  
 }
 
 .column:first-of-type {
-  border-bottom-left-radius: 0;
+  border-bottom-left-radius: var(--radius);
   border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius:var(--radius);
 }
 
 .column:last-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: 0;
+  border-top-right-radius:var(--radius);
+  border-bottom-right-radius:0;
 }
 
 .column ul {
@@ -108,3 +117,86 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+#txt{
+
+  margin: 0;
+  padding: 0;
+}
+
+.avatar{
+width: 20vh;
+height: 20vh ;
+border-radius: 50%;
+background-image: url(/image/avatar-bis.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+margin: 2vh;
+}
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+
+@media screen and (min-width: 700px){
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.desktop {
+  margin: 0;
+  margin-top: calc(var(--gutter) * 5);
+  margin-bottom: calc(var(--gutter) * -0.3125);
+  visibility: visible;
+}
+
+
+.skills {
+  margin-top: calc(var(--gutter) * -2);
+  border-radius: var(--radius);
+  padding: 0 10%;
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: stretch;
+ justify-content: center;
+ 
+}
+
+
+.column:first-of-type {
+  
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: var(--radius);
+border-bottom-right-radius:var(--radius);
+}
+
+.column:last-child {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+
+  
+}
+.column{
+  flex: 1;
+}
+}
+
+
